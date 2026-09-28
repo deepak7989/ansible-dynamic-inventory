@@ -12,3 +12,8 @@ filters:
   # This selects only running instances with tag `Environment` tag set to `dev`.
   tag:Name: frontend
   instance-state-name : running
+
+keyed_groups:
+# This creates host groups based on architecture.
+- key: ec2_tags.Name
+  separator: ''

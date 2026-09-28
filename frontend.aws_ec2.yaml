@@ -10,5 +10,5 @@ hostnames:
 
 filters:
   # This selects only running instances with tag `Environment` tag set to `dev`.
-  tag:Environment: ansible
+  tag:Environment: frontend
   instance-state-name : running

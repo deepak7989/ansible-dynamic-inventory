@@ -7,3 +7,8 @@ hostnames:
   # This option allows displaying the public ip addresses.
   #- ip-address
   - private-ip-address
+
+filters:
+  # This selects only running instances with tag `Environment` tag set to `dev`.
+  tag:Environment: ansible
+  instance-state-name : running
